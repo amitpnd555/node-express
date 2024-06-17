@@ -29,4 +29,8 @@ jobs:
     - run: pwd
     - run: ls
     - run: npm i 
+    - run: npm i pm2 -g
+    - run: pm2 start app.js --name port3000 
+    - run: pm2 status
+    - run: pm2 log port3000
 #    - run: npm test
