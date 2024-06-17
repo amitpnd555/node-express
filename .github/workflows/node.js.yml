@@ -30,7 +30,7 @@ jobs:
     - run: ls
     - run: npm i 
     - run: npm i pm2 -g
-    - run: pm2 restart start port3000 --name port3000 
+    - run: pm2 restart port3000 --name port3000 
     - run: pm2 status
-    - run: pm2 log port3000
+    - run: pm2 log 0
 #    - run: npm test
