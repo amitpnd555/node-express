@@ -30,7 +30,7 @@ jobs:
     - run: ls
     - run: npm i 
     - run: npm i pm2 -g
-    - run: pm2 restart 0 
+    - run: pm2 start app.js 
     - run: pm2 status
     - run: pm2 log 0
 #    - run: npm test
