@@ -3,7 +3,7 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('Hello From Azure cicd!')
+  res.send('Hello From Azure cicd! After opening the port 3000')
 })
 
 app.listen(port, () => {
