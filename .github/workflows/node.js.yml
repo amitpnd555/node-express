@@ -30,3 +30,9 @@ jobs:
     - run: npm run build --if-present
 #    - run: npm test
 
+  test:
+    runs-on: demo
+
+    steps:
+    - name: Run pwd command
+      run: pwd
