@@ -29,10 +29,3 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
 #    - run: npm test
-  deploy:
-  stage: deploy
-  script:
-    - ssh ubuntu@your-vm-public-ip "mkdir -p /home/ubuntu/myapp"
-    - scp -r * ubuntu@your-vm-public-ip:/home/ubuntu/myapp
-    - ssh ubuntu@your-vm-public-ip "cd /home/ubuntu/myapp && npm install && pm2 restart app"
-
